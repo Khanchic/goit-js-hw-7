@@ -1,0 +1,24 @@
+{
+  "name": "goit-js-hw-07",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GansBRO27/goit-js-hw-07.git"
+  },
+  "keywords": [],
+  "author": "YOUR_NAME <YOUR_EMAIL>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GansBRO27/goit-js-hw-07/issues"
+  },
+  "homepage": "https://github.com/GansBRO27/goit-js-hw-07#readme",
+  "description": "",
+  "dependencies": {
+    "validator": "^13.7.0"
+  }
+}
