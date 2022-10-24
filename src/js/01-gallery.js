@@ -18,21 +18,6 @@ galleryItems.forEach((galleryItem) => {
     </div>`
   );
 });
-// galleryContainer.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   if (e.target.nodeName !== "IMG") {
-//     return;
-//   }
-//   const instance = basicLightbox.create(`
-//     <img src=${e.target.dataset.source} width="800" height="600">
-// `);
-//   instance.show();
-//   document.addEventListener("keydown", onModalOpen);
-
-//     instance.close();
-//     document.removeEventListener("keydown", onModalOpen);
-//   }
-// });
 
 galleryContainer.addEventListener("click", createRef);
 
@@ -47,10 +32,10 @@ function createRef(event) {
 <img src="${event.target.dataset.source}">`,
     {
       onClose: (instance) => {
-        window.removeEventListener("keydown", closeOnEsc);
+        document.removeEventListener("keydown", closeOnEsc);
       },
       onShow: (instance) => {
-        window.addEventListener("keydown", closeOnEsc);
+        document.addEventListener("keydown", closeOnEsc);
       },
     }
   );
