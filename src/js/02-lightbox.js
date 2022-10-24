@@ -20,7 +20,7 @@ galleryItems.forEach((galleryItem) => {
     `
   );
 });
-var lightbox = new SimpleLightbox(".gallery a", {
+const lightbox = new SimpleLightbox(".gallery a", {
   captions: true,
   captionSelector: "img",
   captionType: "attr",
